@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --light-grey-color: #efefef;
+  --black-color: #000000;
+  --dark-grey-color: #bfbfbf;
+  --dark-blue-color: #2f454e;
+  --light-blue-color: #2b8ead;
+  --blue-color: #6f98a8;
+}
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+.header {
+  font-size: 20px;
+  width: 90vw;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+  width: 90vw;
+}
+
+.container {
+  background-color: var(--light-grey-color);
+  border-top: 2px solid var(--dark-grey-color);
+  height: 90vh;
+}
+.card-container {
+  display: flex;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+}
+.card {
+  width: 33.33%;
+  height: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px;
+  color: var(--white-color);
+}
+.controls {
+  width: 20%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #72c3dc;
+  color: var(--white-color);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  width: 150px;
+  text-transform: capitalize;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+.dark-gray {
+  background-color: var(--dark-grey-color);
+}
+.dark-blue {
+  background-color: var(--dark-blue-color);
+}
+.light-blue {
+  background-color: var(--light-blue-color);
+}
+.blue {
+  background-color: var(--blue-color);
+}
+@media (max-width: 375px) {
+  .header {
+    background-color: #333333;
+    color: var(--white-color);
+  }
+  .container {
+    background-color: var(--white-color);
+  }
+  .card-container {
+    flex-direction: column-reverse;
+  }
+  .cards {
+    justify-content: space-around;
+  }
+  .card {
+    width: 90%;
+    font-size: 15px;
+    margin: 5px auto;
+    color: var(--black-color);
+    height: 35px;
+    line-height: 35px;
+  }
+  .controls {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn {
+    width: 90px;
+    padding: 5px;
+  }
+  .dark-gray {
+    border-left: 8px solid var(--dark-grey-color);
+    background-color: var(--light-grey-color);
+  }
+  .dark-blue {
+    border-left: 8px solid var(--dark-blue-color);
+    background-color: var(--light-grey-color);
+  }
+  .light-blue {
+    border-left: 8px solid var(--light-blue-color);
+    background-color: var(--light-grey-color);
+  }
+  .blue {
+    border-left: 8px solid var(--blue-color);
+    background-color: var(--light-grey-color);
+  }
+}
